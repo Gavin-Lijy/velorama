@@ -8,7 +8,7 @@ import scanpy.external as sce
 from anndata import AnnData
 import cellrank as cr
 from cellrank.tl.kernels import VelocityKernel
-
+import scvelo as scv
 import torch
 import torch.nn as nn
 

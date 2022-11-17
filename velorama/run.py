@@ -123,7 +123,7 @@ def execute_cmdline():
 			  'results_dir': results_dir,
 			  'dir_name': dir_name}
 
-	resources_per_trial = {"cpu": 1, "gpu": 0.2, "memory": 2 * 1024 * 1024 * 1024}
+	resources_per_trial = {"cpu": 1, "gpu": 0, "memory": 2 * 1024 * 1024 * 1024}
 	analysis = tune.run(train_model,resources_per_trial=resources_per_trial,config=config,
 						local_dir=os.path.join(args.root_dir,'results'))
 	
