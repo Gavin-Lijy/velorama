@@ -2,7 +2,8 @@
 
 import velorama
 
-velorama.execute_cmdline()
+if __name__ == '__main__':
+	velorama.execute_cmdline()
 
 
 
